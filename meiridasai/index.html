@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日大赛主题大赛寸止挑战-每日大赛寸止挑战玩法规则_主题大赛参与方式与节奏技巧</title>
+<meta name="description" content="每日大赛主题大赛寸止挑战专题页，围绕每日大赛的参赛节奏、主题大赛选题方向与寸止挑战的玩法规则展开，提供赛程更新、分类入口、深度解析、常见问题与社区讨论，帮助新手快速理解主题创意与节奏控制要点。">
+<meta name="keywords" content="每日大赛,主题大赛,寸止挑战,每日大赛寸止挑战,主题大赛玩法">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1f2b'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23ffcf6b' stroke-width='5'/%3E%3Cpath d='M32 20v14l10 6' stroke='%23ffcf6b' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+<style>
+:root{
+  --bg:#12151d;
+  --bg-soft:#191e29;
+  --card:#1e2431;
+  --card-2:#232a39;
+  --line:rgba(255,255,255,.08);
+  --txt:#e9edf5;
+  --txt-2:#a9b3c6;
+  --txt-3:#7b8698;
+  --gold:#ffcf6b;
+  --gold-2:#ffb02e;
+  --cyan:#5fd0d8;
+  --pink:#ef7fa8;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:radial-gradient(1200px 600px at 20% -10%,rgba(255,207,107,.10),transparent 60%),
+             radial-gradient(900px 500px at 90% 0%,rgba(95,208,216,.08),transparent 55%),
+             var(--bg);
+  color:var(--txt);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+section{scroll-margin-top:84px}
+
+/* ===== 导航 ===== */
+.dk-nav{
+  position:sticky;top:0;z-index:80;
+  background:rgba(18,21,29,.86);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.dk-nav-in{
+  max-width:1200px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+}
+.dk-logo{
+  display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.5px;
+  font-size:18px;color:var(--txt);white-space:nowrap;
+}
+.dk-logo-mark{
+  width:34px;height:34px;border-radius:10px;
+  background:linear-gradient(145deg,var(--gold),var(--gold-2));
+  display:grid;place-items:center;color:#1a1f2b;font-weight:900;font-size:15px;
+  box-shadow:0 6px 16px rgba(255,176,46,.3);
+}
+.dk-logo span i{color:var(--gold);font-style:normal}
+.dk-menu{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+.dk-menu a{
+  padding:7px 12px;border-radius:999px;font-size:14px;color:var(--txt-2);
+  transition:.2s;white-space:nowrap;
+}
+.dk-menu a:hover{background:rgba(255,207,107,.12);color:var(--gold)}
+.dk-nav-btn{
+  padding:9px 18px;border-radius:999px;font-size:14px;font-weight:700;
+  background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#1a1f2b;
+  box-shadow:0 8px 20px rgba(255,176,46,.28);white-space:nowrap;
+}
+
+/* ===== Banner ===== */
+.dk-hero{
+  position:relative;overflow:hidden;
+  padding:64px 0 56px;
+  border-bottom:1px solid var(--line);
+}
+.dk-hero::after{
+  content:"";position:absolute;inset:auto -10% -60% -10%;height:320px;
+  background:radial-gradient(closest-side,rgba(255,207,107,.16),transparent 70%);
+  pointer-events:none;
+}
+.dk-hero-grid{
+  display:grid;grid-template-columns:1.25fr .75fr;gap:36px;align-items:center;
+}
+.dk-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;color:var(--gold);letter-spacing:2px;
+  border:1px solid rgba(255,207,107,.35);border-radius:999px;
+  padding:5px 14px;margin-bottom:20px;background:rgba(255,207,107,.07);
+}
+.dk-hero h1{
+  font-size:clamp(26px,4vw,44px);line-height:1.25;letter-spacing:.5px;
+  font-weight:900;margin-bottom:18px;
+}
+.dk-hero h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--gold),var(--gold-2));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.dk-hero p.lead{color:var(--txt-2);font-size:15.5px;margin-bottom:8px}
+.dk-search{
+  display:flex;gap:10px;margin:26px 0 20px;max-width:620px;
+}
+.dk-search input{
+  flex:1;padding:14px 18px;border-radius:12px;border:1px solid var(--line);
+  background:rgba(255,255,255,.05);color:var(--txt);font-size:15px;outline:none;
+}
+.dk-search input:focus{border-color:rgba(255,207,107,.5);background:rgba(255,255,255,.08)}
+.dk-search button{
+  padding:0 26px;border-radius:12px;border:0;cursor:pointer;font-size:15px;font-weight:800;
+  background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#1a1f2b;
+}
+.dk-quick{display:flex;flex-wrap:wrap;gap:10px}
+.dk-quick a{
+  padding:8px 16px;border-radius:10px;font-size:14px;color:var(--txt-2);
+  background:rgba(255,255,255,.05);border:1px solid var(--line);transition:.2s;
+}
+.dk-quick a:hover{color:var(--gold);border-color:rgba(255,207,107,.4);transform:translateY(-2px)}
+.dk-hero-side{
+  background:linear-gradient(160deg,var(--card-2),var(--card));
+  border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px;box-shadow:var(--shadow);
+}
+.dk-hero-side h3{font-size:15px;color:var(--gold);margin-bottom:14px;letter-spacing:1px}
+.dk-hero-side ul{list-style:none}
+.dk-hero-side li{
+  display:flex;justify-content:space-between;gap:12px;
+  padding:11px 0;border-bottom:1px dashed var(--line);font-size:14px;color:var(--txt-2);
+}
+.dk-hero-side li:last-child{border-bottom:0}
+.dk-hero-side li b{color:var(--txt);font-weight:600}
+.dk-hero-side li span{color:var(--cyan);white-space:nowrap;font-size:13px}
+
+/* ===== 通用区块 ===== */
+.dk-sec{padding:60px 0}
+.dk-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.dk-sec-head h2{
+  font-size:clamp(21px,2.6vw,28px);font-weight:900;letter-spacing:.5px;
+  display:flex;align-items:center;gap:12px;
+}
+.dk-sec-head h2::before{
+  content:"";width:6px;height:24px;border-radius:3px;
+  background:linear-gradient(180deg,var(--gold),var(--gold-2));
+}
+.dk-sec-head p{color:var(--txt-3);font-size:14px}
+
+/* ===== 简介 ===== */
+.dk-intro{
+  background:linear-gradient(150deg,rgba(255,207,107,.06),rgba(95,208,216,.04));
+  border:1px solid var(--line);border-radius:var(--radius);padding:32px;
+}
+.dk-intro p{color:var(--txt-2);margin-bottom:14px;font-size:15.5px}
+.dk-intro p:last-child{margin-bottom:0}
+.dk-intro strong{color:var(--gold);font-weight:700}
+
+/* ===== 分类入口 ===== */
+.dk-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.dk-cat{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:20px 18px;transition:.25s;
+}
+.dk-cat:hover{transform:translateY(-4px);border-color:rgba(255,207,107,.35);box-shadow:var(--shadow)}
+.dk-cat b{display:block;font-size:15.5px;margin-bottom:6px}
+.dk-cat small{color:var(--txt-3);font-size:13px;line-height:1.6;display:block}
+
+/* ===== 推荐卡片 ===== */
+.dk-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.dk-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;transition:.25s;display:flex;flex-direction:column;
+}
+.dk-card:hover{transform:translateY(-5px);border-color:rgba(255,207,107,.3);box-shadow:var(--shadow)}
+.dk-cover{
+  height:118px;display:flex;align-items:flex-end;padding:14px;
+  font-size:13px;font-weight:800;color:#12151d;letter-spacing:1px;
+}
+.dk-c1{background:linear-gradient(135deg,#ffcf6b,#ff9f43)}
+.dk-c2{background:linear-gradient(135deg,#5fd0d8,#4a9fe0)}
+.dk-c3{background:linear-gradient(135deg,#ef7fa8,#b57ef0)}
+.dk-c4{background:linear-gradient(135deg,#9ae66e,#4fc98a)}
+.dk-c5{background:linear-gradient(135deg,#ffb02e,#f96d4c)}
+.dk-c6{background:linear-gradient(135deg,#8fb8ff,#7a7ff0)}
+.dk-card-body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column}
+.dk-card-body h3{font-size:16px;margin-bottom:10px;line-height:1.45}
+.dk-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+.dk-tag{
+  font-size:12px;padding:3px 9px;border-radius:6px;
+  background:rgba(255,207,107,.1);color:var(--gold);border:1px solid rgba(255,207,107,.2);
+}
+.dk-tag.alt{background:rgba(95,208,216,.1);color:var(--cyan);border-color:rgba(95,208,216,.22)}
+.dk-card-body p{color:var(--txt-2);font-size:14px;flex:1}
+.dk-meta{
+  display:flex;justify-content:space-between;gap:10px;margin-top:14px;
+  font-size:12.5px;color:var(--txt-3);border-top:1px dashed var(--line);padding-top:12px;
+}
+.dk-meta em{font-style:normal;color:var(--gold)}
+
+/* ===== 更新列表 ===== */
+.dk-updates{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dk-up{
+  display:flex;gap:14px;align-items:flex-start;
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;
+  transition:.2s;
+}
+.dk-up:hover{border-color:rgba(95,208,216,.35);background:var(--card-2)}
+.dk-up-time{
+  flex:0 0 auto;font-size:12px;color:var(--cyan);font-weight:700;
+  background:rgba(95,208,216,.08);border-radius:8px;padding:5px 9px;white-space:nowrap;
+}
+.dk-up-txt b{display:block;font-size:14.5px;margin-bottom:3px}
+.dk-up-txt span{font-size:13px;color:var(--txt-3);line-height:1.6}
+
+/* ===== 深度解析 ===== */
+.dk-article{
+  display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:start;
+}
+.dk-article-main{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:34px;
+}
+.dk-article-main h3{font-size:18px;margin:26px 0 12px;color:var(--gold);letter-spacing:.5px}
+.dk-article-main h3:first-child{margin-top:0}
+.dk-article-main p{color:var(--txt-2);font-size:15.5px;margin-bottom:14px;text-align:justify}
+.dk-article-main ul{margin:0 0 16px 20px;color:var(--txt-2);font-size:15.5px}
+.dk-article-main li{margin-bottom:8px}
+.dk-article-main strong{color:var(--txt)}
+.dk-aside{
+  position:sticky;top:88px;display:flex;flex-direction:column;gap:16px;
+}
+.dk-aside-box{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px;
+}
+.dk-aside-box h4{font-size:14px;color:var(--gold);margin-bottom:12px;letter-spacing:1px}
+.dk-aside-box ol{margin-left:18px;color:var(--txt-2);font-size:13.5px;line-height:2}
+.dk-aside-box p{font-size:13.5px;color:var(--txt-3);line-height:1.8}
+
+/* ===== 数据看板 ===== */
+.dk-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dk-stat{
+  background:linear-gradient(160deg,var(--card-2),var(--card));
+  border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center;
+}
+.dk-stat b{display:block;font-size:26px;font-weight:900;color:var(--gold);letter-spacing:1px}
+.dk-stat span{font-size:13px;color:var(--txt-3)}
+
+/* ===== FAQ ===== */
+.dk-faq{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.dk-faq-item{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px 22px;
+}
+.dk-faq-item h3{font-size:15.5px;margin-bottom:10px;color:var(--txt);display:flex;gap:10px}
+.dk-faq-item h3 i{
+  font-style:normal;color:var(--gold);font-weight:900;flex:0 0 auto;
+}
+.dk-faq-item p{font-size:14px;color:var(--txt-2);line-height:1.8}
+
+/* ===== 评论 ===== */
+.dk-comments{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.dk-com{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;
+}
+.dk-com-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.dk-avatar{
+  width:32px;height:32px;border-radius:50%;display:grid;place-items:center;
+  font-size:13px;font-weight:800;color:#12151d;flex:0 0 auto;
+}
+.dk-com-top b{font-size:14px}
+.dk-com-top span{font-size:12px;color:var(--txt-3);margin-left:auto}
+.dk-com p{font-size:14px;color:var(--txt-2);line-height:1.75}
+
+/* ===== 资讯 ===== */
+.dk-news{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.dk-news-item{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;
+  transition:.22s;
+}
+.dk-news-item:hover{transform:translateY(-4px);border-color:rgba(255,207,107,.3)}
+.dk-news-item time{font-size:12px;color:var(--cyan);letter-spacing:1px}
+.dk-news-item h3{font-size:15.5px;margin:8px 0 8px;line-height:1.5}
+.dk-news-item p{font-size:13.5px;color:var(--txt-3);line-height:1.7}
+
+/* ===== 页脚 ===== */
+.dk-foot{
+  border-top:1px solid var(--line);background:rgba(0,0,0,.25);padding:44px 0 30px;margin-top:20px;
+}
+.dk-foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;margin-bottom:28px}
+.dk-foot h4{font-size:14px;color:var(--gold);margin-bottom:14px;letter-spacing:1px}
+.dk-foot p,.dk-foot a{font-size:13.5px;color:var(--txt-3);line-height:1.9}
+.dk-foot ul{list-style:none}
+.dk-foot li{margin-bottom:6px}
+.dk-foot a:hover{color:var(--gold)}
+.dk-copy{
+  border-top:1px solid var(--line);padding-top:20px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  font-size:12.5px;color:var(--txt-3);
+}
+
+/* ===== 响应式 ===== */
+@media(max-width:960px){
+  .dk-hero-grid{grid-template-columns:1fr}
+  .dk-cats{grid-template-columns:repeat(2,1fr)}
+  .dk-cards{grid-template-columns:repeat(2,1fr)}
+  .dk-updates{grid-template-columns:1fr}
+  .dk-article{grid-template-columns:1fr}
+  .dk-aside{position:static;flex-direction:row;flex-wrap:wrap}
+  .dk-aside-box{flex:1 1 240px}
+  .dk-stats{grid-template-columns:repeat(2,1fr)}
+  .dk-faq{grid-template-columns:1fr}
+  .dk-comments{grid-template-columns:1fr}
+  .dk-news{grid-template-columns:1fr}
+  .dk-foot-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .dk-sec{padding:44px 0}
+  .dk-hero{padding:44px 0 40px}
+  .dk-cards{grid-template-columns:1fr}
+  .dk-cats{grid-template-columns:1fr 1fr}
+  .dk-search{flex-direction:column}
+  .dk-search button{padding:13px 0}
+  .dk-article-main{padding:22px}
+  .dk-nav-in{gap:10px}
+  .dk-menu{gap:2px}
+  .dk-menu a{padding:6px 9px;font-size:13px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航 ===== -->
+<nav class="dk-nav">
+  <div class="dk-nav-in">
+    <a class="dk-logo" href="/#dk-hero">
+      <span class="dk-logo-mark">寸</span>
+      <span>每日大赛< i>·</i>主题站</span>
+    </a>
+    <div class="dk-menu">
+      <a href="/#dk-hero">首页</a>
+      <a href="/#dk-cats">分类入口</a>
+      <a href="/#dk-hot">热门推荐</a>
+      <a href="/#dk-updates">每日更新</a>
+      <a href="/#dk-deep">深度解析</a>
+      <a href="/#dk-faq">常见问题</a>
+      <a href="/#dk-comments">社区评论</a>
+      <a href="/#dk-news">赛事资讯</a>
+    </div>
+    <a class="dk-nav-btn" href="/#dk-updates">今日赛程</a>
+  </div>
+</nav>
+
+<!-- ===== 首屏 Banner ===== -->
+<header class="dk-hero" id="dk-hero">
+  <div class="wrap dk-hero-grid">
+    <div>
+      <span class="dk-kicker">DAILY ARENA · 2026.11.07 更新</span>
+      <h1><em>每日大赛主题大赛寸止挑战</em>｜赛程、玩法与选题方向全解读</h1>
+      <p class="lead">围绕每日大赛的主题命题、寸止挑战的节奏规则与参赛体验，整理当天赛程、题材分类、优秀作品思路与社区讨论。</p>
+      <p class="lead">适合想快速上手主题大赛、理解寸止挑战评判逻辑、寻找选题灵感与观看参考的读者。</p>
+
+      <form class="dk-search" onsubmit="return false;">
+        <input type="text" placeholder="搜索：主题大赛选题 / 寸止挑战规则 / 今日赛程">
+        <button type="button">搜索赛事</button>
+      </form>
+
+      <div class="dk-quick">
+        <a href="/#dk-cats">今日命题</a>
+        <a href="/#dk-hot">热门作品</a>
+        <a href="/#dk-updates">实时更新</a>
+        <a href="/#dk-deep">规则解析</a>
+        <a href="/#dk-faq">新手答疑</a>
+        <a href="/#dk-comments">社区讨论</a>
+        <a href="/#dk-news">赛事快讯</a>
+        <a href="/#dk-stats">数据看板</a>
+      </div>
+    </div>
+
+    <aside class="dk-hero-side">
+      <h3>今日赛程速览</h3>
+      <ul>
+        <li><b>主题大赛 · 第 312 期</b><span>进行中</span></li>
+        <li><b>寸止挑战 · 节奏组</b><span>20:00 截止</span></li>
+        <li><b>寸止挑战 · 创意组</b><span>明晚开赛</span></li>
+        <li><b>新人练习场</b><span>全天开放</span></li>
+        <li><b>本周主题：留白与张力</b><span>已公布</span></li>
+        <li><b>优秀作品回看</b><span>已上线</span></li>
+      </ul>
+    </aside>
+  </div>
+</header>
+
+<!-- ===== 平台介绍 ===== -->
+<section class="dk-sec" id="dk-intro">
+  <div class="wrap">
+    <div class="dk-sec-head">
+      <h2>关于每日大赛主题大赛寸止挑战</h2>
+      <p>先弄懂规则，再谈发挥</p>
+    </div>
+    <div class="dk-intro">
+      <p><strong>每日大赛</strong>是一种以“每天一个命题、当天完成、当天评比”为核心节奏的创作与挑战形式。它的魅力不在于一次做到极致，而在于持续参与、快速试错、在有限时间内逼出想法。很多人第一次搜索每日大赛主题大赛寸止挑战，往往是想确认三件事：今天考什么、规则怎么算、我该怎么参与。</p>
+      <p><strong>主题大赛</strong>负责方向，通常会给出一句命题、一个情绪词或一个场景限制，参赛者需要在主题框架内完成表达；<strong>寸止挑战</strong>负责节奏，强调在关键节点收住、不把内容一次性铺满，用停顿、留白和节奏控制制造张力。两者叠加，形成“有命题的限时挑战”，既考验创意，也考验自控力。</p>
+      <p>本页适合三类读者：刚接触每日大赛主题大赛寸止挑战、想系统了解规则的新手；已经参与过几期、想提升选题完成度的老玩家；以及只想围观优秀作品、看看别人怎么做节奏处理的观众。页面提供当天赛程、分类入口、热门作品推荐、深度解析、常见问题与社区评论，方便你按需跳转，也适合收藏后每天回来查看更新。</p>
+      <p>需要说明的是，寸止挑战的重点不是“憋”，而是“控”。什么时候推进、什么时候停、停多久、停在哪个信息点上，才是评判差异所在。这也是每日大赛主题大赛寸止挑战值得反复研究的地方：同一命题下，节奏处理不同，完成度会差出很多。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 分类入口 ===== -->
+<section class="dk-sec" id="dk-cats">
+  <div class="wrap">
+    <div class="dk-sec-head">
+      <h2>分类入口</h2>
+      <p>按命题方向与挑战形式快速定位</p>
+    </div>
+    <div class="dk-cats">
+      <a class="dk-cat" href="/#dk-hot"><b>情绪主题组</b><small>以情绪词命题，强调表达准确与克制</small></a>
+      <a class="dk-cat" href="/#dk-hot"><b>场景限制组</b><small>限定场景或道具，考验临场应变</small></a>
+      <a class="dk-cat" href="/#dk-hot"><b>节奏控制组</b><small>寸止挑战核心分类，看停顿与推进</small></a>
+      <a class="dk-cat" href="/#dk-hot"><b>反转结构组</b><small>要求后段翻转，重视信息释放时机</small></a>
+      <a class="dk-cat" href="/#dk-updates"><b>新人练习场</b><small>低门槛日常题，适合第一次参与</small></a>
+      <a class="dk-cat" href="/#dk-updates"><b>限时冲刺场</b><small>短时间完成，看第一反应与执行力</small></a>
+      <a class="dk-cat" href="/#dk-deep"><b>规则与判定</b><small>评分维度、常见扣分点集中说明</small></a>
+      <a class="dk-cat" href="/#dk-comments"><b>社区讨论区</b><small>选题互助、复盘交流与经验分享</small></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 热门推荐 ===== -->
+<section class="dk-sec" id="dk-hot">
+  <div class="wrap">
+    <div class="dk-sec-head">
+      <h2>热门作品与选题推荐</h2>
+      <p>近期讨论度较高的完成方向</p>
+    </div>
+    <div class="dk-cards">
+      <article class="dk-card">
+        <div class="dk-cover dk-c1">情绪主题组 · 高完成度</div>
+        <div class="dk-card-body">
+          <h3>《把话说到一半》</h3>
+          <div class="dk-tags"><span class="dk-tag">留白</span><span class="dk-tag alt">寸止挑战</span><span class="dk-tag">情绪收束</span></div>
+          <p>前半段推进干脆，关键句故意停住，让观众自己补完。节奏组的典型思路，适合研究每日大賽主题大赛寸止挑战里的“停在哪里”。</p>
+          <div class="dk-meta"><span>热度 <em>9.4</em></span><span>节奏组 · 已完结</span></div>
+        </div>
+      </article>
+      <article class="dk-card">
+        <div class="dk-cover dk-c2">场景限制组 · 创意向</div>
+        <div class="dk-card-body">
+          <h3>《只有一盏灯的命题》</h3>
+          <div class="dk-tags"><span class="dk-tag alt">场景限制</span><span class="dk-tag">单光源</span><span class="dk-tag">氛围</span></div>
+          <p>在极简条件下完成表达，靠停顿和画面变化撑住节奏。主题大赛里这类作品通常分数稳定，难点在于中段容易松散。</p>
+          <div class="dk-meta"><span>热度 <em>9.1</em></span><span>场景组 · 已完结</span></div>
+        </div>
+      </article>
+      <article class="dk-card">
+        <div class="dk-cover dk-c3">反转结构组 · 讨论度高</div>
+        <div class="dk-card-body">
+          <h3>《第三分钟才出现的人》</h3>
+          <div class="dk-tags"><span class="dk-tag">反转</span><span class="dk-tag alt">信息延迟</span><span class="dk-tag">结构</span></div>
+          <p>把关键信息压到后段释放，前段用细节铺垫。属于每日大赛主题大赛寸止挑战中比较吃理解的类型，评论区争论不少。</p>
+          <div class="dk-meta"><span>热度 <em>8.9</em></span><span>反转组 · 已完结</span></div>
+        </div>
+      </article>
+      <article class="dk-card">
+        <div class="dk-cover dk-c4">新人练习场 · 友好</div>
+        <div class="dk-card-body">
+          <h3>《第一次参加就选它》</h3>
+          <div class="dk-tags"><span class="dk-tag alt">新手</span><span class="dk-tag">低门槛</span><span class="dk-tag">日常题</span></div>
+          <p>命题简单、判定宽松，适合用来熟悉每日大赛的提交节奏和评分口径。第一次参与寸止挑战的人建议从这里开始。</p>
+          <div class="dk-meta"><span>热度 <em>8.6</em></span><span>练习场 · 常驻</span></div>
+        </div>
+      </article>
+      <article class="dk-card">
+        <div class="dk-cover dk-c5">限时冲刺场 · 执行力</div>
+        <div class="dk-card-body">
+          <h3>《二十分钟完成的命题》</h3>
+          <div class="dk-tags"><span class="dk-tag">限时</span><span class="dk-tag alt">第一反应</span><span class="dk-tag">效率</span></div>
+          <p>不追求精细，追求在短时间内把结构立住。适合观察主题大赛里“完成度优先”的评分取向，也适合复盘自己的决策速度。</p>
+          <div class="dk-meta"><span>热度 <em>8.4</em></span><span>冲刺场 · 已完结</span></div>
+        </div>
+      </article>
+      <article class="dk-card">
+        <div class="dk-cover dk-c6">节奏控制组 · 进阶</div>
+        <div class="dk-card-body">
+          <h3>《停在最想继续的地方》</h3>
+          <div class="dk-tags"><span class="dk-tag alt">寸止</span><span class="dk-tag">张力</span><span class="dk-tag">收尾</span></div>
+          <p>把寸止挑战的理解落到实操：不是中途断掉，而是在情绪最高点前一步收住。评论区对结尾处理分歧最大。</p>
+          <div class="dk-meta"><span>热度 <em>9.0</em></span><span>节奏组 · 已完结</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 最新更新 ===== -->
+<section class="dk-sec" id="dk-updates">
+  <div class="wrap">
+    <div class="dk-sec-head">
+      <h2>最新更新与今日赛程</h2>
+      <p>2026 年 11 月 7 日 · 实时整理</p>
+    </div>
+    <div class="dk-updates">
+      <div class="dk-up"><span class="dk-up-time">09:00</span><div class="dk-up-txt"><b>主题大赛第 312 期命题公布</b><span>本周主题为“留白与张力”，鼓励在有限信息里做节奏处理。</span></div></div>
+      <div class="dk-up"><span class="dk-up-time">10:20</span><div class="dk-up-txt"><b>寸止挑战节奏组开放提交</b><span>提交窗口持续到今晚 20:00，注意关键节点控制。</span></div></div>
+      <div class="dk-up"><span class="dk-up-time">11:45</span><div class="dk-up-txt"><b>新人练习场新增三道日常题</b><span>难度下调，适合第一次接触每日大赛的参与者。</span></div></div>
+      <div class="dk-up"><span class="dk-up-time">13:10</span><div class="dk-up-txt"><b>昨日优秀作品回看上线</b><span>共收录 12 个完成度较高的主题大赛作品，可对照复盘。</span></div></div>
+      <div class="dk-up"><span class="dk-up-time">14:30</span><div class="dk-up-txt"><b>评分细则补充说明发布</b><span>对寸止挑战中“停顿合理性”一项给出更具体的判定参考。</span></div></div>
+      <div class="dk-up"><span class="dk-up-time">16:00</span><div class="dk-up-txt"><b>场景限制组进入评审阶段</b><span>本组提交已截止，结果预计今晚公布。</span></div></div>
+      <div class="dk-up"><span class="dk-up-time">17:25</span><div class="dk-up-txt"><b>社区发起选题互助帖</b><span>围绕“如何在命题内做出差异”展开讨论，回复较多。</span></div></div>
+      <div class="dk-up"><span class="dk-up-time">18:40</span><div class="dk-up-txt"><b>明日赛程预告</b><span>寸止挑战创意组明晚开赛，命题方向偏向结构反转。</span></div></div>
+      <div class="dk-up"><span class="dk-up-time">19:15</span><div class="dk-up-txt"><b>限时冲刺场加开一场</b><span>时长压缩至 15 分钟，考验第一反应与完成度取舍。</span></div></div>
+      <div class="dk-up"><span class="dk-up-time">20:00</span><div class="dk-up-txt"><b>节奏组提交截止</b><span>本场共收到参与作品若干，评审将于明日开始。</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 深度解析 ===== -->
+<section class="dk-sec" id="dk-deep">
+  <div class="wrap">
+    <div class="dk-sec-head">
+      <h2>深度解析：主题与寸止到底怎么配合</h2>
+      <p>编辑视角的规则拆解</p>
+    </div>
+    <div class="dk-article">
+      <div class="dk-article-main">
+        <h3>一、先把“每日大赛”理解成节奏系统</h3>
+        <p>很多人把每日大赛当成一场考试，其实它更像一套节奏系统。每天一个命题，意味着你不可能无限打磨，必须在信息收集、构思、执行、提交之间做时间分配。真正拉开差距的往往不是创意本身，而是谁能在有限时间里把想法收束成一个完整结构。每日大赛主题大赛寸止挑战之所以被反复讨论，就是因为它把“时间压力”和“节奏控制”同时摆在了台面上。</p>
+        <p>从参与角度看，主题大赛解决“做什么”，寸止挑战解决“做到哪一步停”。前者是方向，后者是分寸。只关注主题、不考虑节奏，作品容易前重后轻；只追求寸止、忽略主题，又容易变成形式游戏。两者配合得当，才会出现那种“看完还想再看一遍”的完成感。</p>
+
+        <h3>二、主题大赛的命题通常怎么读</h3>
+        <p>命题一般分三层：表层是一个词或一句话，中层是隐含的情绪或场景，深层是出题人想看到的处理方式。比如“留白与张力”这种命题，表层说的是画面或叙事留空，中层要求情绪不能一次性给满，深层其实在考“你敢不敢停”。读命题时先别急着想创意，先判断它更偏表达、偏结构还是偏节奏，再决定投入方向。</p>
+        <ul>
+          <li><strong>情绪型命题：</strong>重点在准确，不在强烈。过度用力反而扣分。</li>
+          <li><strong>结构型命题：</strong>重点在信息释放顺序，前后呼应比单点爆发更重要。</li>
+          <li><strong>限制型命题：</strong>重点在条件内做变化，越简单的条件越考验细节。</li>
+        </ul>
+
+        <h3>三、寸止挑战的核心不是“断”，是“控”</h3>
+        <p>寸止挑战最容易被误解的一点，是把它当成“中途停下”。真正有效的寸止，是在观众预期即将被满足的前一刻收住，让张力留在空气里。停得太早，观众没进入状态；停得太晚，张力已经释放，寸止变成普通收尾。判断停点是否合理，可以问自己三个问题：信息给够了吗、情绪到位了吗、观众会不会想继续。前两个是底线，第三个才是加分项。</p>
+        <p>在每日大赛主题大赛寸止挑战的实际评审里，停顿位置、停顿长度、停顿后的处理方式通常会被分开看。停顿位置决定结构，停顿长度决定观感，停顿后的处理决定完成度。三者里任何一项失衡，整体分数都会被拉低。所以与其追求“停得惊艳”，不如先做到“停得合理”。</p>
+
+        <h3>四、常见失分点集中在哪</h3>
+        <p>翻看近几期的复盘讨论，失分点其实很集中。第一是前段铺垫过长，导致真正的内容被压缩；第二是寸止位置随意，像是时间到了就停；第三是停完之后没有收束，留下一个悬空结尾；第四是主题理解偏差，表达很完整但和命题关系不大。前三点属于节奏问题，第四点属于审题问题。新手最容易犯的是第一和第三，老玩家反而容易在第四点上翻车，因为太想做出个人风格。</p>
+
+        <h3>五、适合什么人参与，怎么参与更稳</h3>
+        <p>每日大赛主题大赛寸止挑战对新手其实比较友好，因为命题明确、反馈快，一天就能走完一个完整循环。建议第一次参与先从新人练习场开始，熟悉提交节奏和评分口径，再进入正式主题大赛。老玩家可以尝试限时冲刺场，用更短的时间检验自己的判断力。围观的读者则可以重点关注优秀作品回看，对照自己的第一反应，看差异出在哪一步。</p>
+        <p>如果你搜索这个词是想找“怎么参与”，答案不复杂：看当天命题、判断类型、定结构、选停点、按时提交。真正需要练的是中间两步。每日大赛的价值也在这里——它逼你把“想清楚”和“做出来”压缩在同一天完成，久而久之，判断会越来越快。</p>
+      </div>
+
+      <aside class="dk-aside">
+        <div class="dk-aside-box">
+          <h4>本期要点</h4>
+          <ol>
+            <li>先审题，再定结构</li>
+            <li>寸止位置比长度更关键</li>
+            <li>停完要有收束</li>
+            <li>主题表达优先于技巧</li>
+          </ol>
+        </div>
+        <div class="dk-aside-box">
+          <h4>适合谁看</h4>
+          <p>第一次接触每日大赛的新手、想提升完成度的老玩家、以及围观优秀作品的读者。页面内容按“规则—选题—节奏—复盘”顺序组织，可跳读。</p>
+        </div>
+        <div class="dk-aside-box">
+          <h4>延伸入口</h4>
+          <p><a href="/#dk-faq" style="color:var(--gold)">常见问题</a> · <a href="/#dk-comments" style="color:var(--gold)">社区评论</a> · <a href="/#dk-news" style="color:var(--gold)">赛事资讯</a></p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 数据看板 ===== -->
+<section class="dk-sec" id="dk-stats">
+  <div class="wrap">
+    <div class="dk-sec-head">
+      <h2>数据看板</h2>
+      <p>模拟统计，仅作浏览参考</p>
+    </div>
+    <div class="dk-stats">
+      <div class="dk-stat"><b>312</b><span>主题大赛已办期数</span></div>
+      <div class="dk-stat"><b>6</b><span>今日开放挑战场次</span></div>
+      <div class="dk-stat"><b>12</b><span>昨日优秀作品收录</span></div>
+      <div class="dk-stat"><b>68%</b><span>节奏组完成度达标率</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="dk-sec" id="dk-faq">
+  <div class="wrap">
+    <div class="dk-sec-head">
+      <h2>常见问题</h2>
+      <p>新手最常问的六个问题</p>
+    </div>
+    <div class="dk-faq">
+      <div class="dk-faq-item">
+        <h3><i>Q1</i>每日大赛和主题大赛是同一个东西吗？</h3>
+        <p>不完全是。每日大赛是整体形式，强调每天一个命题、当天完成；主题大赛是其中一种赛制，会给明确主题或限制条件。可以理解为每日大赛是节奏框架，主题大赛是具体玩法。寸止挑战则是节奏层面的挑战形式，常与主题大赛搭配出现。</p>
+      </div>
+      <div class="dk-faq-item">
+        <h3><i>Q2</i>寸止挑战的“寸止”具体指什么？</h3>
+        <p>指在关键节点主动收住，不把信息或情绪一次性释放完，用停顿制造张力。重点在“控”而不是“断”：停的位置要合理，停的长度要适度，停完之后要有收束。很多新手误以为中途停下就算寸止，其实评审更看停顿是否服务于整体结构。</p>
+      </div>
+      <div class="dk-faq-item">
+        <h3><i>Q3</i>第一次参加应该选哪个场次？</h3>
+        <p>建议从新人练习场开始。命题简单、判定宽松，能先熟悉提交节奏和评分口径。参与一两期之后，再进入正式主题大赛或节奏控制组。如果时间紧，可以试限时冲刺场，但不建议第一次就选，容易因为赶时间忽略结构。</p>
+      </div>
+      <div class="dk-faq-item">
+        <h3><i>Q4</i>主题大赛的命题看不懂怎么办？</h3>
+        <p>先做拆解：表层词义、隐含情绪、出题意图三层分开看，再判断它偏表达、偏结构还是偏节奏。看不懂时不要硬做风格，优先保证完成度和主题相关性。社区讨论区常有选题互助帖，可以参考别人的拆解思路，但不要直接套用。</p>
+      </div>
+      <div class="dk-faq-item">
+        <h3><i>Q5</i>每日大赛主题大赛寸止挑战有固定评分标准吗？</h3>
+        <p>通常会有几个维度：主题契合度、结构完整度、节奏控制、收束处理。不同场次权重会有差异，节奏组更看停顿合理性，反转组更看信息释放时机。具体细则以当期说明为准，页面里的解析是通用参考，不替代官方判定。</p>
+      </div>
+      <div class="dk-faq-item">
+        <h3><i>Q6</i>怎么知道自己适不适合继续参与？</h3>
+        <p>看两点：一是复盘时能不能说清楚自己哪里没做好，二是下一期有没有想尝试的新方向。如果每次都能定位一个具体问题并改进，就值得继续；如果只是重复同一种做法、分数长期不变，可以先围观优秀作品，找找差异再回来。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 评论 ===== -->
+<section class="dk-sec" id="dk-comments">
+  <div class="wrap">
+    <div class="dk-sec-head">
+      <h2>社区评论</h2>
+      <p>来自参与者和围观者的真实语气</p>
+    </div>
+    <div class="dk-comments">
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#ffcf6b,#ff9f43)">林</span><b>林间有雾</b><span>11-06</span></div><p>节奏组这期命题挺友好的，但我还是停早了，观众根本没进入状态，复盘的时候自己也看出来了。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#5fd0d8,#4a9fe0)">阿</span><b>阿澈不熬夜</b><span>11-06</span></div><p>每日大赛最爽的地方就是反馈快，一天一个循环，错了第二天就能改，比闷头练一个月有用。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#ef7fa8,#b57ef0)">南</span><b>南风慢半拍</b><span>11-05</span></div><p>主题大赛的命题看着简单，实际做起来很容易跑偏。我这次就是表达完整但和主题关系不大，扣得心服口服。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#9ae66e,#4fc98a)">小</span><b>小满今天交稿</b><span>11-05</span></div><p>寸止挑战真的不是随便断一下，停完之后没有收束的话整个作品就悬在那了，我吃过这个亏。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#ffb02e,#f96d4c)">七</span><b>七号观测员</b><span>11-04</span></div><p>《第三分钟才出现的人》这个反转处理得不错，但前段铺垫稍微长了点，差点没撑住。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#8fb8ff,#7a7ff0)">沉</span><b>沉默的推进器</b><span>11-04</span></div><p>新人练习场确实友好，第一次参加没被劝退，节奏也跟得上，推荐给刚入坑的。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#ffcf6b,#ff9f43)">夏</span><b>夏至未满</b><span>11-03</span></div><p>评分细则补充说明出来之后清楚多了，之前对“停顿合理性”一直有点模糊。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#5fd0d8,#4a9fe0)">路</span><b>路过打酱油</b><span>11-03</span></div><p>纯围观，看优秀作品回看比刷短视频有意思，能看出不同人对同一个命题的处理差异。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#ef7fa8,#b57ef0)">青</span><b>青柠不加冰</b><span>11-02</span></div><p>限时冲刺场十五分钟真的顶不住，结构还没立住时间就到了，佩服能做完的人。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#9ae66e,#4fc98a)">半</span><b>半页笔记</b><span>11-01</span></div><p>感觉近期命题有点偏情绪型，希望结构型的多来几期，反转组那种我更擅长。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#ffb02e,#f96d4c)">不</span><b>不困的猫</b><span>10-31</span></div><p>每日大赛主题大赛寸止挑战这几个词凑一起看着挺绕，看懂规则之后其实逻辑很顺，就是审题加控节奏。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#8fb8ff,#7a7ff0)">晚</span><b>晚风收信</b><span>10-30</span></div><p>中肯说一句，有些高分作品我觉得一般，可能是我对寸止的理解还停留在表面，继续看回看学习。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#ffcf6b,#ff9f43)">旧</span><b>旧船票</b><span>10-29</span></div><p>场景限制组这期条件太简单了，反而不好做，越简单越考验细节，我做得有点平。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#5fd0d8,#4a9fe0)">小</span><b>小鹿乱撞墙</b><span>10-28</span></div><p>希望优秀作品回看能加一句简短的编辑点评，光看作品有时候抓不到重点。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#ef7fa8,#b57ef0)">周</span><b>周末不加班</b><span>10-27</span></div><p>连续参加了六期，最大的变化是审题变快了，以前要磨半天，现在十分钟能定方向。</p></div>
+      <div class="dk-com"><div class="dk-com-top"><span class="dk-avatar" style="background:linear-gradient(135deg,#9ae66e,#4fc98a)">蓝</span><b>蓝格子衬衫</b><span>10-26</span></div><p>节奏组提交截止前十分钟才交，卡点交稿的感觉比作品本身还刺激。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 资讯 ===== -->
+<section class="dk-sec" id="dk-news">
+  <div class="wrap">
+    <div class="dk-sec-head">
+      <h2>赛事资讯</h2>
+      <p>规则、赛程与社区动态</p>
+    </div>
+    <div class="dk-news">
+      <article class="dk-news-item">
+        <time>2026-11-07</time>
+        <h3>第 312 期主题大赛命题公布：留白与张力</h3>
+        <p>本期命题偏向节奏型，鼓励参与者在有限信息里做收束处理，评审将重点关注停顿位置与收尾完成度。</p>
+      </article>
+      <article class="dk-news-item">
+        <time>2026-11-06</time>
+        <h3>寸止挑战评分细则补充说明发布</h3>
+        <p>针对“停顿合理性”给出更具体的判定参考，明确停顿需服务整体结构，而非单纯的时间中断。</p>
+      </article>
+      <article class="dk-news-item">
+        <time>2026-11-05</time>
+        <h3>昨日优秀作品回看上线，共收录 12 个</h3>
+        <p>覆盖情绪、场景、反转三个方向，适合对照复盘自己的选题与节奏处理差异。</p>
+      </article>
+      <article class="dk-news-item">
+        <time>2026-11-04</time>
+        <h3>新人练习场新增三道日常题</h3>
+        <p>难度下调，命题更贴近日常表达，适合第一次接触每日大赛的参与者熟悉流程。</p>
+      </article>
+      <article class="dk-news-item">
+        <time>2026-11-03</time>
+        <h3>限时冲刺场加开场次，时长压缩至 15 分钟</h3>
+        <p>更强调第一反应与完成度取舍，适合已有一定经验的参与者检验判断速度。</p>
+      </article>
+      <article class="dk-news-item">
+        <time>2026-11-02</time>
+        <h3>社区发起选题互助帖，讨论如何在命题内做出差异</h3>
+        <p>围绕审题拆解、结构选择与寸止位置展开，回复中不乏可复用的实操思路。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="dk-foot">
+  <div class="wrap">
+    <div class="dk-foot-grid">
+      <div>
+        <h4>每日大赛主题站</h4>
+        <p>围绕每日大赛、主题大赛与寸止挑战的规则解析、赛程整理与社区讨论内容站。页面信息用于浏览参考，具体赛制与评分以当期说明为准。</p>
+      </div>
+      <div>
+        <h4>栏目导航</h4>
+        <ul>
+          <li><a href="/#dk-cats">分类入口</a></li>
+          <li><a href="/#dk-hot">热门推荐</a></li>
+          <li><a href="/#dk-updates">每日更新</a></li>
+          <li><a href="/#dk-deep">深度解析</a></li>
+          <li><a href="/#dk-faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>友情链接</h4>
+        <ul>
+          <li><a href="/#dk-hero">首页</a></li>
+          <li><a href="/#dk-comments">社区评论</a></li>
+          <li><a href="/#dk-news">赛事资讯</a></li>
+          <li><a href="/#dk-stats">数据看板</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="dk-copy">
+      <span>© 2026 每日大赛主题站 · 内容整理与社区讨论</span>
+      <span>免责声明：本页内容为规则解读与浏览参考，不构成任何参与承诺，具体以当期赛事说明为准。</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+  </html>
